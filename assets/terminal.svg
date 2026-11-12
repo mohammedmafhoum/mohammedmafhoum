@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="520" viewBox="0 0 600 520" role="img" aria-label="Terminal scouting report: education, experience, languages and availability">
+  <defs>
+    <style>
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 14px; }
+      .p { fill: #7ee787; } .c { fill: #e6edf3; } .o { fill: #8b949e; } .y { fill: #ffd33d; } .b { fill: #79c0ff; }
+      .ln { animation: show .25s ease-out both; }
+      @keyframes show { from { opacity: 0; } to { opacity: 1; } }
+      .cursor { animation: blink 1s steps(2, start) infinite; }
+      @keyframes blink { to { visibility: hidden; } }
+    </style>
+  </defs>
+  <rect width="600" height="520" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <rect width="600" height="40" rx="14" fill="#161b22"/>
+  <rect y="26" width="600" height="14" fill="#161b22"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f56"/><circle cx="44" cy="20" r="6" fill="#ffbd2e"/><circle cx="64" cy="20" r="6" fill="#27c93f"/>
+  <text x="300" y="25" text-anchor="middle" class="mono" font-size="13" fill="#8b949e" style="font-size:13px">scouting-report — bash</text>
+
+  <g class="mono">
+    <text x="24" y="78" class="ln" style="animation-delay:.3s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c">whoami</tspan></text>
+    <text x="24" y="100" class="ln y" style="animation-delay:.8s">Mohammed Mafhoum — software engineering co-op</text>
+
+    <text x="24" y="138" class="ln" style="animation-delay:1.4s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c">cat education.txt</tspan></text>
+    <text x="24" y="160" class="ln c" style="animation-delay:1.9s">▸ B.A.Sc. Software Engineering (Co-op), uOttawa</text>
+    <text x="24" y="182" class="ln c" style="animation-delay:2.1s">▸ Diploma with <tspan class="y">Distinction</tspan>, Computer Eng. Tech.</text>
+    <text x="40" y="202" class="ln o" style="animation-delay:2.2s">  Collège La Cité · 2026</text>
+
+    <text x="24" y="240" class="ln" style="animation-delay:2.8s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c">tail career.log</tspan></text>
+    <text x="24" y="262" class="ln c" style="animation-delay:3.3s"><tspan class="b">[2022–25]</tspan> CRA Innovation Lab — support, web testing</text>
+    <text x="24" y="282" class="ln o" style="animation-delay:3.4s">          20–30 inquiries/day · trained 10+ colleagues</text>
+    <text x="24" y="304" class="ln c" style="animation-delay:3.6s"><tspan class="b">[2019–23]</tspan> Manager — Quebec Billard &amp; Decor</text>
+    <text x="24" y="326" class="ln c" style="animation-delay:3.8s"><tspan class="b">[2015–18]</tspan> Tech support — Bell Mobility (Nordia)</text>
+
+    <text x="24" y="364" class="ln" style="animation-delay:4.4s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c">./languages --spoken</tspan></text>
+    <text x="24" y="386" class="ln c" style="animation-delay:4.9s">français ✓   english ✓   (official CBC results)</text>
+
+    <text x="24" y="424" class="ln" style="animation-delay:5.5s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c">systemctl status career</tspan></text>
+    <text x="24" y="446" class="ln" style="animation-delay:6s"><tspan fill="#3fb950">●</tspan><tspan class="c"> active — </tspan><tspan class="y">open to co-op &amp; internships</tspan></text>
+
+    <text x="24" y="484" class="ln" style="animation-delay:6.5s"><tspan class="p">mafhoum@fc</tspan><tspan class="o">:~$ </tspan><tspan class="c cursor">▌</tspan></text>
+  </g>
+</svg>

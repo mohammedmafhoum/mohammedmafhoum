@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Tactics board: skills arranged as a 4-3-3 soccer formation, with the ball passed from security to networking, cloud and code before scoring a deployment goal">
+  <defs>
+    <pattern id="stripes" width="160" height="600" patternUnits="userSpaceOnUse">
+      <rect width="80" height="600" fill="#0f4d29"/>
+      <rect x="80" width="80" height="600" fill="#0d4425"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .lbl { font-size: 13px; font-weight: 700; fill: #f0fff4; }
+      .num { font-size: 15px; font-weight: 800; fill: #0d1117; }
+      .zone { font-size: 12px; letter-spacing: 3px; fill: #9be9a8; opacity: .75; }
+      .pass { fill: none; stroke: #ffd33d; stroke-width: 2.5; stroke-dasharray: 7 7; animation: dash 1s linear infinite; opacity: .85; }
+      @keyframes dash { to { stroke-dashoffset: -14; } }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes pulse { 50% { transform: scale(1.18); opacity: .35; } }
+    </style>
+  </defs>
+
+  <rect width="1000" height="600" rx="18" fill="#0d1117"/>
+  <!-- header -->
+  <text x="40" y="44" class="mono" font-size="14" fill="#7ee787" letter-spacing="2">TACTICS BOARD</text>
+  <text x="40" y="70" class="sans" font-size="22" font-weight="800" fill="#ffffff">How I play — 4·3·3</text>
+  <text x="960" y="44" text-anchor="end" class="mono" font-size="13" fill="#8b949e">MAFHOUM FC  ▸  attacking →</text>
+  <text x="960" y="70" text-anchor="end" class="mono" font-size="13" fill="#8b949e">every skill passes to the next</text>
+
+  <!-- pitch -->
+  <g transform="translate(20,90)">
+    <rect width="960" height="490" rx="10" fill="url(#stripes)"/>
+    <g fill="none" stroke="#e9fbe9" stroke-opacity=".6" stroke-width="2">
+      <rect x="10" y="10" width="940" height="470" rx="4"/>
+      <line x1="480" y1="10" x2="480" y2="480"/>
+      <circle cx="480" cy="245" r="60"/>
+      <rect x="10" y="135" width="110" height="220"/>
+      <rect x="10" y="190" width="40" height="110"/>
+      <rect x="840" y="135" width="110" height="220"/>
+      <rect x="910" y="190" width="40" height="110"/>
+      <path d="M120,200 A60,60 0 0,1 120,290"/>
+      <path d="M840,200 A60,60 0 0,0 840,290"/>
+    </g>
+    <circle cx="480" cy="245" r="3" fill="#e9fbe9"/>
+    <!-- goal net -->
+    <g stroke="#e9fbe9" stroke-opacity=".5" stroke-width="1">
+      <rect x="950" y="215" width="10" height="60" fill="#ffffff" fill-opacity=".08"/>
+    </g>
+
+    <!-- zone labels -->
+    <text x="70" y="470" text-anchor="middle" class="mono zone">SECURITY</text>
+    <text x="210" y="470" text-anchor="middle" class="mono zone">NETWORKING</text>
+    <text x="470" y="470" text-anchor="middle" class="mono zone">SYSTEMS &amp; CLOUD</text>
+    <text x="730" y="470" text-anchor="middle" class="mono zone">CODE</text>
+
+    <!-- passing lane -->
+    <path class="pass" d="M70,245 L210,190 L470,245 L470,365 L730,245 L955,240"/>
+
+    <!-- players: GK -->
+    <g class="sans">
+      <g transform="translate(70,245)">
+        <circle r="30" fill="#ffd33d" class="pulse" opacity=".5"/>
+        <circle r="24" fill="#ffd33d" stroke="#0d1117" stroke-width="3"/>
+        <text y="5" text-anchor="middle" class="num">1</text>
+        <text y="46" text-anchor="middle" class="lbl">pfSense</text>
+      </g>
+      <!-- DEF -->
+      <g transform="translate(210,75)"><circle r="24" fill="#7ee787" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">2</text><text y="46" text-anchor="middle" class="lbl">TCP/IP</text></g>
+      <g transform="translate(210,190)"><circle r="24" fill="#7ee787" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">4</text><text y="46" text-anchor="middle" class="lbl">DNS</text></g>
+      <g transform="translate(210,300)"><circle r="24" fill="#7ee787" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">5</text><text y="46" text-anchor="middle" class="lbl">SSH</text></g>
+      <g transform="translate(210,405)"><circle r="24" fill="#7ee787" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">3</text><text y="46" text-anchor="middle" class="lbl">Routing</text></g>
+      <!-- MID -->
+      <g transform="translate(470,120)"><circle r="24" fill="#58a6ff" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">8</text><text y="46" text-anchor="middle" class="lbl">Linux</text></g>
+      <g transform="translate(470,245)"><circle r="24" fill="#58a6ff" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">6</text><text y="-34" text-anchor="middle" class="lbl">Azure</text></g>
+      <g transform="translate(470,365)"><circle r="24" fill="#58a6ff" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">10</text><text y="46" text-anchor="middle" class="lbl">AWS</text></g>
+      <!-- FWD -->
+      <g transform="translate(730,110)"><circle r="24" fill="#ff7b72" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">7</text><text y="46" text-anchor="middle" class="lbl">SQL</text></g>
+      <g transform="translate(730,245)"><circle r="24" fill="#ff7b72" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">9</text><text y="-34" text-anchor="middle" class="lbl">Python</text></g>
+      <g transform="translate(730,380)"><circle r="24" fill="#ff7b72" stroke="#0d1117" stroke-width="3"/><text y="5" text-anchor="middle" class="num">11</text><text y="46" text-anchor="middle" class="lbl">Flask</text></g>
+    </g>
+
+    <!-- the ball -->
+    <g filter="url(#glow)">
+      <circle r="9" fill="#ffffff" stroke="#111" stroke-width="1.2">
+        <animateMotion dur="8s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.8;1"
+          path="M70,245 L210,190 L470,245 L470,365 L730,245 L955,240"/>
+      </circle>
+    </g>
+
+    <!-- goal flash -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.79;0.82;0.97;1" dur="8s" repeatCount="indefinite"/>
+      <rect x="640" y="18" width="300" height="46" rx="10" fill="#0d1117" stroke="#2ea043" stroke-width="2"/>
+      <text x="790" y="48" text-anchor="middle" class="mono" font-size="18" font-weight="800" fill="#7ee787">GOAL!  git push ✓ deployed</text>
+    </g>
+  </g>
+</svg>

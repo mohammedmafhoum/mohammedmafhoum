@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="Full time — thanks for visiting, let's connect">
+  <defs>
+    <pattern id="net" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M0,0 L18,18 M18,0 L0,18" stroke="#ffffff" stroke-opacity=".07" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1117" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0a3d20"/>
+    </linearGradient>
+    <style>
+      .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .wave { animation: wave 2.2s ease-in-out infinite; transform-origin: 600px 150px; }
+      @keyframes wave { 50% { transform: scaleY(1.06); } }
+      .bounce { animation: b 1.6s cubic-bezier(.5,0,.5,1) infinite; }
+      @keyframes b { 50% { transform: translateY(-14px); } }
+    </style>
+  </defs>
+  <rect width="1200" height="150" fill="url(#fade)"/>
+  <rect width="1200" height="150" fill="url(#net)"/>
+  <g class="bounce">
+    <circle cx="600" cy="38" r="12" fill="#fff" stroke="#111"/>
+    <polygon points="600,33 604.5,36.3 602.8,41.5 597.2,41.5 595.5,36.3" fill="#111"/>
+  </g>
+  <text x="600" y="92" text-anchor="middle" class="mono" font-size="14" letter-spacing="6" fill="#7ee787">FULL TIME</text>
+  <text x="600" y="124" text-anchor="middle" class="sans" font-size="20" font-weight="700" fill="#e6edf3">Thanks for visiting — let's build something together.</text>
+</svg>

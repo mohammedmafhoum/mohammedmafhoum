@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="520" viewBox="0 0 380 520" role="img" aria-label="Player card for Mohammed Mafhoum, software engineering co-op, with skill attributes">
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b5e36"/>
+      <stop offset=".55" stop-color="#0e3a22"/>
+      <stop offset="1" stop-color="#071a10"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff2b3"/>
+      <stop offset=".5" stop-color="#ffd33d"/>
+      <stop offset="1" stop-color="#b8860b"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="shape"><path d="M40,14 H340 L366,48 V430 L190,508 L14,430 V48 Z"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .sweep { animation: sweep 5s ease-in-out infinite; }
+      @keyframes sweep { 0% { transform: translateX(-420px) skewX(-20deg) } 40%,100% { transform: translateX(520px) skewX(-20deg) } }
+      .bar { transform-box: fill-box; transform-origin: left; animation: grow 1.4s ease-out both; }
+      @keyframes grow { from { transform: scaleX(0) } }
+      .k { font-size: 13px; fill: #9be9a8; letter-spacing: 1px; }
+      .v { font-size: 18px; font-weight: 800; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <path d="M40,14 H340 L366,48 V430 L190,508 L14,430 V48 Z" fill="url(#cardBg)" stroke="url(#gold)" stroke-width="5"/>
+  <g clip-path="url(#shape)">
+    <!-- subtle hex ball pattern -->
+    <g fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="2">
+      <path d="M260,60 l30,17 v35 l-30,17 l-30,-17 v-35 z"/>
+      <path d="M320,95 l30,17 v35 l-30,17 l-30,-17 v-35 z"/>
+      <path d="M260,130 l30,17 v35 l-30,17 l-30,-17 v-35 z"/>
+      <path d="M200,95 l30,17 v35 l-30,17 l-30,-17 v-35 z"/>
+    </g>
+    <rect class="sweep" x="0" y="0" width="120" height="520" fill="url(#shine)"/>
+  </g>
+
+  <!-- top left: role -->
+  <text x="52" y="78" class="sans" font-size="38" font-weight="900" fill="url(#gold)">DEV</text>
+  <text x="54" y="102" class="mono" font-size="13" fill="#e6ffed" letter-spacing="2">CO-OP '26</text>
+  <line x1="54" y1="116" x2="120" y2="116" stroke="#ffd33d" stroke-opacity=".6"/>
+  <text x="54" y="140" class="mono" font-size="12" fill="#c9d1d9">FR · EN</text>
+  <text x="54" y="160" class="mono" font-size="12" fill="#c9d1d9">uOttawa</text>
+
+  <!-- monogram crest -->
+  <g transform="translate(232,140)">
+    <circle r="68" fill="#0d1117" stroke="url(#gold)" stroke-width="4"/>
+    <circle r="56" fill="none" stroke="#2ea043" stroke-width="2" stroke-dasharray="4 6"/>
+    <text y="18" text-anchor="middle" class="sans" font-size="54" font-weight="900" fill="url(#gold)">MM</text>
+  </g>
+
+  <!-- name -->
+  <text x="190" y="262" text-anchor="middle" class="sans" font-size="32" font-weight="900" fill="#ffffff" letter-spacing="3">MAFHOUM</text>
+  <line x1="60" y1="280" x2="320" y2="280" stroke="#ffd33d" stroke-opacity=".5"/>
+
+  <!-- attributes -->
+  <g class="mono">
+    <g transform="translate(58,316)">
+      <text class="v">NET</text><text x="58" class="k">networks</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="102" height="5" rx="2" fill="#7ee787"/>
+    </g>
+    <g transform="translate(58,360)">
+      <text class="v">SEC</text><text x="58" class="k">security</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="94" height="5" rx="2" fill="#7ee787" style="animation-delay:.15s"/>
+    </g>
+    <g transform="translate(58,404)">
+      <text class="v">CLD</text><text x="58" class="k">cloud</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="96" height="5" rx="2" fill="#7ee787" style="animation-delay:.3s"/>
+    </g>
+    <g transform="translate(206,316)">
+      <text class="v">LNX</text><text x="58" class="k">linux</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="100" height="5" rx="2" fill="#58a6ff" style="animation-delay:.45s"/>
+    </g>
+    <g transform="translate(206,360)">
+      <text class="v">PY</text><text x="58" class="k">python</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="92" height="5" rx="2" fill="#58a6ff" style="animation-delay:.6s"/>
+    </g>
+    <g transform="translate(206,404)">
+      <text class="v">SUP</text><text x="58" class="k">support</text>
+      <rect y="10" width="120" height="5" rx="2" fill="#ffffff" fill-opacity=".1"/><rect class="bar" y="10" width="116" height="5" rx="2" fill="#ffd33d" style="animation-delay:.75s"/>
+    </g>
+  </g>
+
+  <text x="190" y="446" text-anchor="middle" class="mono" font-size="11" fill="#9be9a8" letter-spacing="2">⚽ TEAM PLAYER · BILINGUAL</text>
+</svg>
